@@ -1,0 +1,544 @@
+{
+  "metadata": {
+    "fan": "Ma'lumotlar bazasi",
+    "dars": 1,
+    "mavzu": "Ma'lumotlar bazasi nima?",
+    "davomiyligi": "15 daqiqa",
+    "til": "uz"
+  },
+  "ovozlar": {
+    "ustoz": {
+      "jins": "ayol"
+    },
+    "oquvchi": {
+      "jins": "erkak"
+    }
+  },
+  "dialog": [
+    {
+      "id": 1,
+      "speaker": "ustoz",
+      "type": "kirish",
+      "pause": 1200,
+      "text": "Assalomu alaykum. Ma'lumotlar bazasi fanining birinchi darsiga xush kelibsiz. Agar siz dasturlashni o'rganayotgan bo'lsangiz, ma'lumotlar bazasi siz uchun eng muhim mavzulardan biridir. Ushbu darslar davomida biz barcha tushunchalarni sodda tilda va amaliy misollar bilan o'rganamiz.",
+      "visual": {
+        "image": "Rasim/1.png",
+        "mode": "board",
+        "transition": "fade",
+        "transition_seconds": 0.35
+      }
+    },
+    {
+      "id": 2,
+      "speaker": "ustoz",
+      "type": "kirish",
+      "pause": 1000,
+      "text": "Bugungi mavzumiz: Ma'lumotlar bazasi nima va u nima uchun kerak? Keyingi darsimizda esa SQL va NoSQL o'rtasidagi farqlarni o'rganamiz.",
+      "visual": {
+        "image": "Rasim/1.png",
+        "mode": "board",
+        "transition": "fade",
+        "transition_seconds": 0.35
+      }
+    },
+    {
+      "id": 3,
+      "speaker": "oquvchi",
+      "type": "savol",
+      "pause": 700,
+      "text": "Ustoz, dasturlashni endi boshlayotgan odam uchun ma'lumotlar bazasini bilish shartmi?"
+    },
+    {
+      "id": 4,
+      "speaker": "ustoz",
+      "type": "javob",
+      "pause": 1000,
+      "text": "Ha, albatta. Chunki deyarli barcha zamonaviy dasturlar foydalanuvchilarning ma'lumotlarini saqlaydi. Masalan, login, parol, mahsulotlar, xabarlar, buyurtmalar va boshqa ko'plab ma'lumotlar ma'lumotlar bazasida saqlanadi.",
+      "visual": {
+        "image": "Rasim/1.png",
+        "mode": "board",
+        "transition": "fade",
+        "transition_seconds": 0.35
+      }
+    },
+    {
+      "id": 5,
+      "speaker": "ustoz",
+      "type": "tushuntirish",
+      "pause": 900,
+      "text": "Keling, oddiy misolni tasavvur qilamiz. Siz telefoningizga eslatmalar yozadigan ilova yaratdingiz. Agar foydalanuvchi yozgan eslatmalar dastur yopilgandan keyin yo'qolib qolsa, bunday ilovaning foydasi bo'lmaydi. Shuning uchun bu ma'lumotlarni xavfsiz saqlaydigan tizim kerak bo'ladi.",
+      "visual": {
+        "image": "Rasim/3.png",
+        "mode": "board",
+        "transition": "fade",
+        "transition_seconds": 0.35
+      }
+    },
+    {
+      "id": 6,
+      "speaker": "oquvchi",
+      "type": "savol",
+      "pause": 700,
+      "text": "Demak, ma'lumotlar bazasi shunchaki ma'lumotlarni saqlaydigan joy ekan-da?"
+    },
+    {
+      "id": 7,
+      "speaker": "ustoz",
+      "type": "javob",
+      "pause": 1000,
+      "text": "Qisman to'g'ri. Lekin ma'lumotlar bazasi faqat saqlamaydi. U ma'lumotlarni qidiradi, tartiblaydi, yangilaydi, o'chiradi va ularni xavfsiz himoya qiladi.",
+      "visual": {
+        "image": "Rasim/1.png",
+        "mode": "board",
+        "transition": "fade",
+        "transition_seconds": 0.35
+      }
+    },
+    {
+      "id": 8,
+      "speaker": "ustoz",
+      "type": "misol",
+      "pause": 900,
+      "text": "Masalan, bank tizimini olaylik. Millionlab mijozlarning hisob raqamlari, pul o'tkazmalari va balanslari har soniyada o'zgarib turadi. Agar bu ma'lumotlar oddiy matn fayllarida saqlansa, ularni boshqarish juda qiyin bo'ladi.",
+      "visual": {
+        "image": "Rasim/5.png",
+        "mode": "board",
+        "transition": "fade",
+        "transition_seconds": 0.35
+      }
+    },
+    {
+      "id": 9,
+      "speaker": "ustoz",
+      "type": "tushuntirish",
+      "pause": 900,
+      "text": "Ma'lumotlar bazasi esa barcha ma'lumotlarni tartibli saqlaydi va kerak bo'lganda soniyaning juda kichik qismida kerakli ma'lumotni topib beradi.",
+      "visual": {
+        "image": "Rasim/1.png",
+        "mode": "board",
+        "transition": "fade",
+        "transition_seconds": 0.35
+      }
+    },
+    {
+      "id": 10,
+      "speaker": "oquvchi",
+      "type": "savol",
+      "pause": 700,
+      "text": "Unda telefonimdagi kontaktlar ham ma'lumotlar bazasidami?"
+    },
+    {
+      "id": 11,
+      "speaker": "ustoz",
+      "type": "javob",
+      "pause": 1000,
+      "text": "Ha. Telefon kontaktlari, SMS xabarlar, Telegram yozishmalari, Instagram foydalanuvchilari, YouTube videolari va hatto o'yinlardagi saqlangan natijalar ham ma'lumotlar bazalarida saqlanadi.",
+      "visual": {
+        "image": "Rasim/2.png",
+        "mode": "board",
+        "transition": "fade",
+        "transition_seconds": 0.35
+      }
+    },
+    {
+      "id": 12,
+      "speaker": "ustoz",
+      "type": "xulosa",
+      "pause": 1500,
+      "text": "Demak, ma'lumotlar bazasi bu ma'lumotlarni tartibli, tezkor va xavfsiz boshqarish uchun yaratilgan maxsus tizimdir. Endi keyingi qismda ma'lumotlar bazasi oddiy fayllardan va Excel dasturidan nimasi bilan farq qilishini o'rganamiz.",
+      "visual": {
+        "image": "Rasim/1.png",
+        "mode": "board",
+        "transition": "fade",
+        "transition_seconds": 0.35
+      }
+    },
+    {
+      "id": 13,
+      "speaker": "ustoz",
+      "type": "tushuntirish",
+      "pause": 900,
+      "text": "Endi ma'lumotlarni saqlashning eski usullarini ko'rib chiqamiz. Dasturchilar oldin ma'lumotlarni oddiy matn fayllarida yoki alohida hujjatlarda saqlashgan. Kichik dasturlar uchun bu usul ishlashi mumkin edi, lekin ma'lumotlar ko'paygani sari muammolar paydo bo'la boshlaydi.",
+      "visual": {
+        "image": "Rasim/4.png",
+        "mode": "board",
+        "transition": "fade",
+        "transition_seconds": 0.35
+      }
+    },
+    {
+      "id": 14,
+      "speaker": "oquvchi",
+      "type": "savol",
+      "pause": 700,
+      "text": "Qanday muammolar paydo bo'ladi?"
+    },
+    {
+      "id": 15,
+      "speaker": "ustoz",
+      "type": "javob",
+      "pause": 1000,
+      "text": "Birinchi muammo ma'lumotni qidirish bilan bog'liq. Masalan, minglab foydalanuvchilar haqidagi ma'lumot oddiy faylda saqlansa, kerakli odamni topish ko'p vaqt oladi. Ikkinchi muammo xavfsizlik. Kimdir faylni noto'g'ri o'zgartirishi yoki o'chirib yuborishi mumkin.",
+      "visual": {
+        "image": "Rasim/4.png",
+        "mode": "board",
+        "transition": "fade",
+        "transition_seconds": 0.35
+      }
+    },
+    {
+      "id": 16,
+      "speaker": "ustoz",
+      "type": "misol",
+      "pause": 900,
+      "text": "Tasavvur qiling, katta internet do'kon bor. Unda yuz minglab mahsulotlar mavjud. Har bir mahsulotning nomi, narxi, rasmi, tavsifi va sotuv ma'lumotlari bor. Agar bular oddiy fayllarda saqlansa, tizim juda sekin ishlagan bo'lar edi.",
+      "visual": {
+        "image": "Rasim/6.png",
+        "mode": "board",
+        "transition": "fade",
+        "transition_seconds": 0.35
+      }
+    },
+    {
+      "id": 17,
+      "speaker": "oquvchi",
+      "type": "savol",
+      "pause": 700,
+      "text": "Excel dasturidan foydalanib bo'lmaydimi? Axir unda ham jadval yaratish mumkin."
+    },
+    {
+      "id": 18,
+      "speaker": "ustoz",
+      "type": "javob",
+      "pause": 1000,
+      "text": "Excel jadval ko'rinishidagi ma'lumotlar bilan ishlash uchun juda yaxshi dastur. Masalan, kichik hisob-kitoblar, ro'yxatlar yoki shaxsiy rejalar uchun qulay. Lekin katta tizimlarda uning imkoniyatlari yetarli bo'lmay qoladi.",
+      "visual": {
+        "image": "Rasim/6.png",
+        "mode": "board",
+        "transition": "fade",
+        "transition_seconds": 0.35
+      }
+    },
+    {
+      "id": 19,
+      "speaker": "ustoz",
+      "type": "tushuntirish",
+      "pause": 900,
+      "text": "Ma'lumotlar bazasi esa minglab va millionlab yozuvlar bilan ishlash uchun yaratilgan. U bir vaqtning o'zida ko'plab foydalanuvchilarga xizmat ko'rsatishi mumkin.",
+      "visual": {
+        "image": "Rasim/4.png",
+        "mode": "board",
+        "transition": "fade",
+        "transition_seconds": 0.35
+      }
+    },
+    {
+      "id": 20,
+      "speaker": "ustoz",
+      "type": "misol",
+      "pause": 900,
+      "text": "Masalan, ijtimoiy tarmoqni olaylik. Bir vaqtning o'zida millionlab odamlar tizimga kiradi, xabar yuboradi, rasm yuklaydi va izoh yozadi. Bunday katta hajmdagi ma'lumotlarni boshqarish uchun kuchli ma'lumotlar bazasi kerak bo'ladi.",
+      "visual": {
+        "image": "Rasim/2.png",
+        "mode": "board",
+        "transition": "fade",
+        "transition_seconds": 0.35
+      }
+    },
+    {
+      "id": 21,
+      "speaker": "oquvchi",
+      "type": "savol",
+      "pause": 700,
+      "text": "Demak, ma'lumotlar bazasi dastur bilan birga ishlaydigan alohida tizimmi?"
+    },
+    {
+      "id": 22,
+      "speaker": "ustoz",
+      "type": "javob",
+      "pause": 1000,
+      "text": "Ha, to'g'ri. Dastur foydalanuvchi bilan ishlaydi, ma'lumotlar bazasi esa kerakli ma'lumotlarni saqlaydi. Ular birgalikda ishlaganda to'liq tizim hosil bo'ladi.",
+      "visual": {
+        "image": "Rasim/4.png",
+        "mode": "board",
+        "transition": "fade",
+        "transition_seconds": 0.35
+      }
+    },
+    {
+      "id": 23,
+      "speaker": "ustoz",
+      "type": "tushuntirish",
+      "pause": 900,
+      "text": "Masalan, siz telefon ilovasida login qilganingizda, dastur siz kiritgan ma'lumotni tekshiradi. Bu ma'lumotlar oldindan ma'lumotlar bazasida saqlangan bo'ladi. Agar ma'lumot mos kelsa, tizim sizni ichkariga kiritadi.",
+      "visual": {
+        "image": "Rasim/3.png",
+        "mode": "board",
+        "transition": "fade",
+        "transition_seconds": 0.35
+      }
+    },
+    {
+      "id": 24,
+      "speaker": "ustoz",
+      "type": "tushuntirish",
+      "pause": 900,
+      "text": "Ma'lumotlar bazalari ham turli xil bo'ladi. Ba'zilari jadval ko'rinishida ishlaydi, ba'zilari esa boshqa usullardan foydalanadi. Keyingi darslarda biz ular haqida batafsil o'rganamiz.",
+      "visual": {
+        "image": "Rasim/7.png",
+        "mode": "board",
+        "transition": "fade",
+        "transition_seconds": 0.35
+      }
+    },
+    {
+      "id": 25,
+      "speaker": "ustoz",
+      "type": "xulosa",
+      "pause": 1500,
+      "text": "Bugungi qismda ma'lumotlar bazasi oddiy fayl va Excel dasturidan nima bilan farq qilishini tushundik. Katta tizimlarda tezlik, xavfsizlik va tartib juda muhim. Shu sababli dasturchilar maxsus ma'lumotlar bazalaridan foydalanadi.",
+      "visual": {
+        "image": "Rasim/4.png",
+        "mode": "board",
+        "transition": "fade",
+        "transition_seconds": 0.35
+      }
+    },
+    {
+      "id": 26,
+      "speaker": "ustoz",
+      "type": "tushuntirish",
+      "pause": 900,
+      "text": "Endi ma'lumotlar bazalari qanday boshqarilishi haqida gaplashamiz. Ma'lumotlar bazasi bilan ishlash uchun maxsus dasturlar mavjud. Ular ma'lumotlar bazasini yaratish, o'zgartirish va boshqarishga yordam beradi.",
+      "visual": {
+        "image": "Rasim/7.png",
+        "mode": "board",
+        "transition": "fade",
+        "transition_seconds": 0.35
+      }
+    },
+    {
+      "id": 27,
+      "speaker": "oquvchi",
+      "type": "savol",
+      "pause": 700,
+      "text": "Bu dasturlar oddiy dasturlarga o'xshaydimi?"
+    },
+    {
+      "id": 28,
+      "speaker": "ustoz",
+      "type": "javob",
+      "pause": 1000,
+      "text": "Ular ham dastur hisoblanadi, lekin ma'lum bir vazifa uchun yaratilgan. Masalan, MySQL, PostgreSQL va MongoDB kabi tizimlar ma'lumotlarni saqlash va boshqarish uchun ishlatiladi.",
+      "visual": {
+        "image": "Rasim/7.png",
+        "mode": "board",
+        "transition": "fade",
+        "transition_seconds": 0.35
+      }
+    },
+    {
+      "id": 29,
+      "speaker": "ustoz",
+      "type": "tushuntirish",
+      "pause": 900,
+      "text": "Bugungi dasturlash dunyosida eng ko'p ishlatiladigan ma'lumotlar bazalari ikki katta guruhga bo'linadi. Birinchisi SQL ma'lumotlar bazalari, ikkinchisi esa NoSQL ma'lumotlar bazalaridir.",
+      "visual": {
+        "image": "Rasim/7.png",
+        "mode": "board",
+        "transition": "fade",
+        "transition_seconds": 0.35
+      }
+    },
+    {
+      "id": 30,
+      "speaker": "oquvchi",
+      "type": "savol",
+      "pause": 700,
+      "text": "SQL va NoSQL nima ekanligini hozirdanoq bilishimiz kerakmi?"
+    },
+    {
+      "id": 31,
+      "speaker": "ustoz",
+      "type": "javob",
+      "pause": 1000,
+      "text": "Bugungi darsda faqat umumiy tushuncha olamiz. Keyingi darsda SQL va NoSQL haqida alohida va chuqurroq o'rganamiz.",
+      "visual": {
+        "image": "Rasim/7.png",
+        "mode": "board",
+        "transition": "fade",
+        "transition_seconds": 0.35
+      }
+    },
+    {
+      "id": 32,
+      "speaker": "ustoz",
+      "type": "tushuntirish",
+      "pause": 900,
+      "text": "SQL ma'lumotlar bazalarida ma'lumotlar odatda jadval shaklida saqlanadi. Jadval ustunlar va qatorlardan tashkil topadi. Masalan, foydalanuvchilar jadvalida ism, familiya, yosh va elektron pochta kabi ustunlar bo'lishi mumkin.",
+      "visual": {
+        "image": "Rasim/8.png",
+        "mode": "board",
+        "transition": "fade",
+        "transition_seconds": 0.35
+      }
+    },
+    {
+      "id": 33,
+      "speaker": "ustoz",
+      "type": "tushuntirish",
+      "pause": 900,
+      "text": "NoSQL ma'lumotlar bazalari esa ko'proq moslashuvchan tuzilishga ega. Ularda ma'lumotlar hujjat, kalit va qiymat yoki boshqa shakllarda saqlanishi mumkin.",
+      "visual": {
+        "image": "Rasim/8.png",
+        "mode": "board",
+        "transition": "fade",
+        "transition_seconds": 0.35
+      }
+    },
+    {
+      "id": 34,
+      "speaker": "oquvchi",
+      "type": "savol",
+      "pause": 700,
+      "text": "Qaysi biri yaxshiroq? SQLmi yoki NoSQLmi?"
+    },
+    {
+      "id": 35,
+      "speaker": "ustoz",
+      "type": "javob",
+      "pause": 1000,
+      "text": "Bitta aniq javob yo'q. Qaysi biri yaxshi ekanligi loyihaning vazifasiga bog'liq. Ba'zi loyihalarda SQL juda qulay bo'lsa, boshqa loyihalarda NoSQL yaxshi natija beradi.",
+      "visual": {
+        "image": "Rasim/8.png",
+        "mode": "board",
+        "transition": "fade",
+        "transition_seconds": 0.35
+      }
+    },
+    {
+      "id": 36,
+      "speaker": "ustoz",
+      "type": "misol",
+      "pause": 900,
+      "text": "Masalan, bank tizimlarida tartib va aniqlik juda muhim bo'lgani uchun ko'pincha SQL ishlatiladi. Katta hajmdagi tez o'zgaruvchi ma'lumotlar bilan ishlaydigan ayrim loyihalarda esa NoSQL tanlanishi mumkin.",
+      "visual": {
+        "image": "Rasim/5.png",
+        "mode": "board",
+        "transition": "fade",
+        "transition_seconds": 0.35
+      }
+    },
+    {
+      "id": 37,
+      "speaker": "ustoz",
+      "type": "takrorlash",
+      "pause": 1000,
+      "text": "Keling, bugungi darsdagi asosiy fikrlarni takrorlaymiz. Ma'lumotlar bazasi ma'lumotlarni saqlash va boshqarish tizimidir. U oddiy fayllardan farqli ravishda katta hajmdagi ma'lumotlarni tez va xavfsiz boshqaradi.",
+      "visual": {
+        "image": "Rasim/1.png",
+        "mode": "board",
+        "transition": "fade",
+        "transition_seconds": 0.35
+      }
+    },
+    {
+      "id": 38,
+      "speaker": "ustoz",
+      "type": "test",
+      "pause": 5000,
+      "text": "Birinchi savol. Ma'lumotlar bazasi nima uchun kerak?",
+      "visual": {
+        "image": "Rasim/9.png",
+        "mode": "board",
+        "transition": "fade",
+        "transition_seconds": 0.35
+      }
+    },
+    {
+      "id": 39,
+      "speaker": "ustoz",
+      "type": "javob",
+      "pause": 1000,
+      "text": "To'g'ri javob: ma'lumotlarni saqlash, qidirish, yangilash va xavfsiz boshqarish uchun kerak.",
+      "visual": {
+        "image": "Rasim/9.png",
+        "mode": "board",
+        "transition": "fade",
+        "transition_seconds": 0.35
+      }
+    },
+    {
+      "id": 40,
+      "speaker": "ustoz",
+      "type": "test",
+      "pause": 5000,
+      "text": "Ikkinchi savol. Excel va ma'lumotlar bazasining asosiy farqi nimada?",
+      "visual": {
+        "image": "Rasim/9.png",
+        "mode": "board",
+        "transition": "fade",
+        "transition_seconds": 0.35
+      }
+    },
+    {
+      "id": 41,
+      "speaker": "ustoz",
+      "type": "javob",
+      "pause": 1000,
+      "text": "To'g'ri javob: Excel kichik hajmdagi ma'lumotlar uchun qulay, ma'lumotlar bazasi esa katta hajmdagi tizimlar uchun yaratilgan.",
+      "visual": {
+        "image": "Rasim/9.png",
+        "mode": "board",
+        "transition": "fade",
+        "transition_seconds": 0.35
+      }
+    },
+    {
+      "id": 42,
+      "speaker": "ustoz",
+      "type": "test",
+      "pause": 5000,
+      "text": "Uchinchi savol. SQL va NoSQL nimaga tegishli?",
+      "visual": {
+        "image": "Rasim/9.png",
+        "mode": "board",
+        "transition": "fade",
+        "transition_seconds": 0.35
+      }
+    },
+    {
+      "id": 43,
+      "speaker": "ustoz",
+      "type": "javob",
+      "pause": 1000,
+      "text": "To'g'ri javob: ular ma'lumotlar bazalarini boshqarish usullaridir.",
+      "visual": {
+        "image": "Rasim/9.png",
+        "mode": "board",
+        "transition": "fade",
+        "transition_seconds": 0.35
+      }
+    },
+    {
+      "id": 44,
+      "speaker": "ustoz",
+      "type": "yakun",
+      "pause": 1500,
+      "text": "Bugungi birinchi darsimiz yakunlandi. Siz ma'lumotlar bazasi nima ekanini, nima uchun kerakligini va SQL hamda NoSQL haqida boshlang'ich tushunchalarni oldingiz. Keyingi darsimizda SQL haqida batafsil o'rganamiz: u qanday ishlaydi, jadval nima va ma'lumotlar qanday boshqariladi.",
+      "visual": {
+        "image": "Rasim/1.png",
+        "mode": "board",
+        "transition": "fade",
+        "transition_seconds": 0.35
+      }
+    }
+  ],
+  "video_config": {
+    "board_images_folder": "Rasim",
+    "classroom_folder": "classroom",
+    "timeline_file": "timeline/timeline.json",
+    "resolution": "800x450",
+    "fps": 30
+  }
+}
