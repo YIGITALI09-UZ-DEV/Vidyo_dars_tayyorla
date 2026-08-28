@@ -53,7 +53,7 @@ jobs:
       
       - name: Upload Generated Videos
         if: success()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: generated-videos
           path: output/
@@ -61,7 +61,7 @@ jobs:
       
       - name: Upload Logs on Failure
         if: failure()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: workflow-logs
           path: |
