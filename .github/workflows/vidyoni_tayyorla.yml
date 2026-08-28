@@ -1,0 +1,80 @@
+name: Video Generation Workflow
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  prepare-and-generate-video:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Install System Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            ffmpeg \
+            libsm6 \
+            libxext6 \
+            libxrender-dev
+      
+      - name: Install Python Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt 2>/dev/null || pip install \
+            moviepy \
+            pillow \
+            imageio \
+            imageio-ffmpeg \
+            numpy
+      
+      - name: Run Audio Processing (audyo_dars.py)
+        run: python audyo_dars.py
+        continue-on-error: true
+      
+      - name: Run Video Generation (video_yarat.py)
+        run: python video_yarat.py
+        continue-on-error: true
+      
+      - name: Upload Generated Videos
+        if: success()
+        uses: actions/upload-artifact@v3
+        with:
+          name: generated-videos
+          path: output/
+          retention-days: 30
+      
+      - name: Upload Logs on Failure
+        if: failure()
+        uses: actions/upload-artifact@v3
+        with:
+          name: workflow-logs
+          path: |
+            timeline/
+            temp/
+          retention-days: 7
+      
+      - name: Create Summary
+        if: always()
+        run: |
+          echo "## Video Generation Workflow Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Workflow Status:** ${{ job.status }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Run ID:** ${{ github.run_id }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Triggered by:** ${{ github.event_name }}" >> $GITHUB_STEP_SUMMARY
+          if [ -d "output" ]; then
+            echo "**Output Files:**" >> $GITHUB_STEP_SUMMARY
+            ls -lh output/ >> $GITHUB_STEP_SUMMARY || echo "No output files found" >> $GITHUB_STEP_SUMMARY
+          fi
